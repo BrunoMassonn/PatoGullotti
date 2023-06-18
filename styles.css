@@ -472,7 +472,7 @@ nav.bg-propi{
                 box-sizing: border-box;
     }
     .slide img{
-        width: 100%;
-        height: 100%;
+        width: 375px;
+        height: 667px;
     }
 }

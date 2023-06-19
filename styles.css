@@ -425,9 +425,13 @@ nav.bg-propi{
         grid-gap:50px;
         padding: 50px 0;
       }
-      .piedepagina .grupo2 iframe{
-        margin-top: 230px;
-      }
+      .piedepagina .grupo2 {
+        display: flex;
+        justify-content: center;
+        }
+        .piedepagina .grupo2 iframe{
+            margin-top: 230px;
+        }
      .slide {
         margin-top: 70px;
      }
@@ -472,10 +476,10 @@ nav.bg-propi{
                 box-sizing: border-box;
     }
     .slide img{
-        width: 305px;
+        width: 100vw;
         height: 567px;
     }
     .piedepagina{
-        width: 400px;
+        width: 100vw;
     }
 }

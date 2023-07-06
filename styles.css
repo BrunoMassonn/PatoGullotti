@@ -385,6 +385,7 @@ nav.bg-propi{
     grid-column: 3/4;
     grid-row: 1/2;
     align-self: center;
+    height: auto;
 }
 
 *{
@@ -408,7 +409,7 @@ h1{
 .galeria{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
-    width: 95%;
+    width: auto;
     margin: auto;
     grid-gap: 10px;
     padding: 40px 0;
@@ -422,7 +423,6 @@ h1{
 }
 .galeria < a{
     display: block;
-    position: relative;
     overflow: hidden;
     object-fit: cover;
 }
@@ -491,13 +491,13 @@ h1{
         grid-gap:50px;
         padding: 50px 0;
         background-color: black;
+        
       }
     .piedepagina{
         background-color: black;
-        position: absolute;
         bottom: 0;
         width: 100%;
-        height: 200px;
+        height: 100%;
         color: white;
         border-top: 30px;
 
@@ -507,7 +507,7 @@ h1{
         display: flex;
         justify-content: center;
         }
-
+       
         .piedepagina .grupo2 iframe{
             margin-top: 230px;
         }
@@ -637,8 +637,44 @@ h1{
    .imagenesbordes .title{
     display: grid;
     grid-column: 1/3;
-    grid-row: 1/3;
+    grid-row: 2/3;
     align-self: flex-end;
+    width: 70%;
+    margin-top: 400px;
+    margin-left: 20px;
+    text-align: justify;
+    letter-spacing: -1px;
    }
-   
-}
+   .cardsdiv {
+    display: grid;
+    grid-template-rows: (repeat 4,1fr);
+    grid-template-columns: (repeat(3,1fr));
+    
+   }
+   .cardsdiv .mia{
+    display: grid;
+    grid-column: 1/3;
+    grid-row: 1/4;
+    align-self: flex-start;
+    justify-self: flex-start;
+    margin-left: 60px;
+    
+   }
+   .cardsdiv .god{
+    display: grid;
+    grid-column: 1/3;
+    grid-row: 2/4;
+    margin-top: 100px;
+    justify-self: flex-start;
+    align-self: flex-start;
+    margin-left: 60px;
+   }
+   .cardsdiv .tuya{
+    display: grid;
+    grid-row: 4/4;
+    grid-column: 1/3;
+    justify-self: flex-start;
+    align-self: flex-start;
+    margin-left: 60px;
+
+   }
